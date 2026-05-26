@@ -1,7 +1,6 @@
 ## Environment creation arguments
 mamba create -c conda-forge -c bioconda -n life750_qc fastqc multiqc
-mamba create -c conda-forge -c bioconda -n life750_genomics bwa samtools bcftools bedtools
-mamba create -c conda-forge -c bioconda -n life750_rna r-base bioconductor-deseq2 r-tidyverse 
+mamba create -c conda-forge -c bioconda -n life750_genomics bwa samtools bcftools bedtools freebayes
 
 # Runs quality control to see the quality of the raw sequences 
 fastqc *.fastq *.fa
